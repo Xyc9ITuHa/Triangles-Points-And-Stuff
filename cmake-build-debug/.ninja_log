@@ -1,0 +1,16 @@
+# ninja log v6
+137	1063	7665003899127111	CMakeFiles/second.dir/triangle.cpp.obj	12785cf951f29788
+29	1066	7665003898040236	CMakeFiles/second.dir/main.cpp.obj	a0aa65ab0795a03c
+1066	1522	7665003908413447	second.exe	dbbe2a17b4540e78
+29	658	7665005501158192	CMakeFiles/second.dir/triangle.cpp.obj	12785cf951f29788
+23	660	7665005501094830	CMakeFiles/second.dir/main.cpp.obj	a0aa65ab0795a03c
+660	776	7665005507467443	second.exe	dbbe2a17b4540e78
+18	663	7665025013399197	CMakeFiles/second.dir/main.cpp.obj	a0aa65ab0795a03c
+663	793	7665025019844922	second.exe	dbbe2a17b4540e78
+24	632	7665027880728319	CMakeFiles/second.dir/triangle.cpp.obj	12785cf951f29788
+19	644	7665027880680463	CMakeFiles/second.dir/main.cpp.obj	a0aa65ab0795a03c
+644	759	7665027886931179	second.exe	dbbe2a17b4540e78
+5	641	7665028349375407	CMakeFiles/second.dir/main.cpp.obj	a0aa65ab0795a03c
+642	756	7665028355747413	second.exe	dbbe2a17b4540e78
+15	619	7665028603755480	CMakeFiles/second.dir/main.cpp.obj	a0aa65ab0795a03c
+620	732	7665028609803688	second.exe	dbbe2a17b4540e78
