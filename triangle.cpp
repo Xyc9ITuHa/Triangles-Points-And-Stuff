@@ -66,7 +66,7 @@ Triangle::PointLocation Triangle::contains(const Point &P) const {
     //else if none of the above fits its outside
     return OUTSIDE;
 }
-
+// super random message to test commits and pushing
 Triangle readTriangle() {
     Triangle t; //create triangle
     std::cout << "Enter the coordinates of triangle vertices:" << std::endl;

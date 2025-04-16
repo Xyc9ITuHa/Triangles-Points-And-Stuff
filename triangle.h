@@ -43,7 +43,7 @@ struct Triangle {
     //HELPER FUNCTIONS
 private:
     // if point is on a line segment
-    bool isPointOnSegment(const Point &P, const Point &segStart, const Point &segEnd) const;
+    bool isPointOnSegment(const Point &P, const Point &segmentStart, const Point &segmentEnd) const;
 
     //calculate the sign of cross product for point-in-triangle test
     double crossProduct(const Point &A, const Point &B, const Point &C) const;
