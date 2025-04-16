@@ -1,15 +1,16 @@
 #include "triangle.h"
 
+using namespace std;
 int main() {
     int choice;
-    std::cout << "Choose an option:" << std::endl;
-    std::cout << "1. Use default triangle and point" << std::endl;
-    std::cout << "2. Enter triangle and points manually" << std::endl;
-    std::cout << "Enter your choice:   ";
-    std::cin >> choice;
+    cout << "Choose an option:" << endl;
+    cout << "1. Use default triangle and point" << endl;
+    cout << "2. Enter triangle and points manually" << endl;
+    cout << "Enter your choice:   ";
+    cin >> choice;
 
     Triangle triangle;
-    std::vector<Point> points;
+    vector<Point> points;
 
     if (choice == 1) {
         // for testing purposes
@@ -19,8 +20,8 @@ int main() {
         // Reading points and triangle
         triangle = readTriangle();
         if (triangle.isDegenerate()) {
-            std::cout << "Warning: The triangle is degenerate (area = 0)." << std::endl;
-            std::cout << "\t [area - S]\n" << std::endl;
+            cout << "Warning: The triangle is degenerate (area = 0)." << endl;
+            cout << "\t [area - S]\n" << endl;
         }
         points = readPoints();
         //got rid of readPoint that reads only one point. more versatile to use vector
@@ -32,19 +33,19 @@ int main() {
     // Process each point
     for (size_t i = 0; i < points.size(); i++) {
         const Point& p = points[i];
-        std::cout << "Point " << (i + 1) << " (" << p.x << ", " << p.y << "): ";
+        cout << "Point " << (i + 1) << " (" << p.x << ", " << p.y << "): ";
 
         Triangle::PointLocation location = triangle.contains(p);
 
         switch (location) {
             case Triangle::INSIDE:
-                std::cout << "The point is inside the triangle." << std::endl;
+                cout << "The point is inside the triangle." << endl;
             break;
             case Triangle::ON_BOUNDARY:
-                std::cout << "The point is on the boundary of the triangle." << std::endl;
+                cout << "The point is on the boundary of the triangle." << endl;
             break;
             case Triangle::OUTSIDE:
-                std::cout << "The point is outside the triangle." << std::endl;
+                cout << "The point is outside the triangle." << endl;
             break;
         }
     }

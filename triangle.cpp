@@ -22,9 +22,9 @@ double Triangle::area() const {
     return sqrt(s * (s - a) * (s - b) * (s - c));
 }
 
-double Triangle::crossProduct(const Point &A, const Point &B, const Point &C) const {
+double Triangle::crossProduct(const Point &A, const Point &B, const Point &P) const {
     // Calculate the cross product (A-C) × (B-C)
-    return (A.x - C.x) * (B.y - C.y) - (A.y - C.y) * (B.x - C.x);
+    return (A.x - P.x) * (B.y - P.y) - (A.y - P.y) * (B.x - P.x);
 }
 
 bool Triangle::isPointOnSegment(const Point &P, const Point &segStart, const Point &segEnd) const {

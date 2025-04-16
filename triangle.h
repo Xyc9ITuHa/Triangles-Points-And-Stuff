@@ -1,6 +1,6 @@
 //
 // Created by хус on 16.04.2025.
-//
+// так за один день зробив
 
 #ifndef TRIANGLE_H
 #define TRIANGLE_H
@@ -46,7 +46,7 @@ private:
     bool isPointOnSegment(const Point &P, const Point &segmentStart, const Point &segmentEnd) const;
 
     //calculate the sign of cross product for point-in-triangle test
-    double crossProduct(const Point &A, const Point &B, const Point &C) const;
+    double crossProduct(const Point &A, const Point &B, const Point &P) const;
 };
 
 //Reading triangle
