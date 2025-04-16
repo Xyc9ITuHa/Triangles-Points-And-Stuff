@@ -9,8 +9,8 @@ double distance(const Point &p1, const Point &p2) {
 } // V((x2-x1)^2 + (y2-y1)^2) vector product
 
 bool Triangle::isDegenerate() const {
-    return fabs(area()) < 1e-9;
-} //comparing absolute value of triagnle are with 0.00000001 (or smth like that)
+    return fabs(area()) < 1e-5;
+} //comparing absolute value of triagnle are with 0.0000000001 (or smth like that)
 //if smaller, then its degenerate
 
 double Triangle::area() const {
@@ -85,7 +85,7 @@ Triangle readTriangle() {
 
     return t;
 }
-
+// do not look at my commits ( ͡° ͜ʖ ͡°)
 // useless because replaced by better readPoints that writes them to vector
 Point readPoint() {
     Point p;

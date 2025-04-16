@@ -27,8 +27,6 @@ int main() {
         //got rid of readPoint that reads only one point. more versatile to use vector
     }
 
-    // Letting user know that triangle is degenerate
-
 
     // Process each point
     for (size_t i = 0; i < points.size(); i++) {
